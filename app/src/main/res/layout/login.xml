@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo/usuario"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignLeft="@+id/correo"
+        android:layout_alignStart="@+id/correo"
+        android:layout_marginTop="38dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/escom"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/contrasenya"
+        android:layout_alignRight="@+id/restore"
+        android:layout_alignEnd="@+id/restore"
+        android:layout_alignLeft="@+id/restore"
+        android:layout_alignStart="@+id/restore" />
+
+    <Button
+        android:text="Olvide Contraseña!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restore"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/correo"
+        android:layout_alignStart="@+id/correo" />
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:text="Sistema de monitoreo"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+    android:id="@+id/register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:layout_below="@+id/restore"
+        android:layout_alignRight="@+id/restore"
+        android:layout_alignEnd="@+id/restore"
+        android:layout_alignLeft="@+id/restore"
+        android:layout_alignStart="@+id/restore" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/contrasenya"
+        android:layout_alignStart="@+id/contrasenya" />
+
+    <EditText
+        android:id="@+id/contrasenya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/TextView01"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2">
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
